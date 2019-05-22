@@ -1,0 +1,15 @@
+@Library('Banzai') _
+banzai {
+    gitOps = [
+        autoDeploy: [
+            /develop/ : 'dev'
+        ],
+        envs: [
+            'dev' : [:],
+            'qa' : [
+                approvers: ['<jenkins-id>'],
+                watchers: ['<jenkins-id>']
+            ]
+        ]
+    ]
+}
