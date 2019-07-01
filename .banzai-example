@@ -1,4 +1,4 @@
-libary 'BanzaiOS@master'
+library 'BanzaiOS@master'
 
 banzai {
     gitOps = [
