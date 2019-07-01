@@ -1,7 +1,7 @@
 library 'BanzaiOS@master'
 
-banzai {
-    gitOps = [
+banzai([
+    gitOps:[
         envs: [
             'dev' : [:],
             'qa' : [
@@ -12,4 +12,4 @@ banzai {
             /develop/ : 'dev'
         ]
     ]
-}
+])
