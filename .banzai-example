@@ -7,8 +7,7 @@ banzai {
         envs: [
             'dev' : [:],
             'qa' : [
-                approvers: ['<jenkins-id>'],
-                watchers: ['<jenkins-id>']
+                approverIds: ['<jenkins-id>']
             ]
         ]
     ]
