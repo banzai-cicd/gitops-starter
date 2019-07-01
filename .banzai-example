@@ -1,14 +1,15 @@
-@Library('Banzai') _
+libary 'BanzaiOS@master'
+
 banzai {
     gitOps = [
-        autoDeploy: [
-            /develop/ : 'dev'
-        ],
         envs: [
             'dev' : [:],
             'qa' : [
                 approverIds: ['<jenkins-id>']
             ]
+        ],
+        autoDeploy: [
+            /develop/ : 'dev'
         ]
     ]
 }
