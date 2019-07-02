@@ -1,4 +1,4 @@
-library 'BanzaiOS@master'
+library 'Banzai@master'
 
 banzai([
     gitOps:[
