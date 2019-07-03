@@ -1,6 +1,9 @@
 library 'BanzaiCICD@master'
 
 banzai([
+    cleanWorkspace: [ // helps avoid git conflicts
+        pre: true
+    ],
     gitOps:[
         envs: [
             'dev' : [:],
