@@ -1,6 +1,7 @@
 library 'BanzaiCICD@master'
 
 banzai([
+    sshCreds: ['git-ssh'], // required to update the GitOps repo
     cleanWorkspace: [ // helps avoid git conflicts
         pre: true
     ],
